@@ -2,62 +2,68 @@
 <head>
   <link rel="stylesheet" href="css/rwd.css">
 
-<title>Page Title</title>
-</head>
-<body>
-<h1>Personal Profile Web page </h1>
-<p>
-About Me<br>
-Name: Julius Cesar L. Nario<br>
-Education / Achievements<br>
--College: Asia Pacific Colleges <br>
--High School: Saint Joseph Intitute Of Technology <br>
-Course: Infomation technology <br>
--IT Experience: Fun and Exciting<br>
-Hobbies & Interests <br>
--Online games and Outdoors activity<br>
--Cooking, and Sports<br>
-Goals In Life / Dream:
--To earn 6 figures salary<br>
--To have a stable job<br>
-Picture Gallery<br>
-<img src="https://img.freepik.com/free-vector/simple-vibing-cat-square-meme_742173-4493.jpg?semt=ais_hybrid&w=740&q=80" alt="Cat with cool glasses" width="500"
-  height="600">
-<img src="https://i.pinimg.com/736x/bf/6e/29/bf6e296386c67b027cd3d234e3c6efa4.jpg" alt="Cat with cool glasses" width="500"
-  height="600">
-</p>
-<div class="grid-container">
-
-<div class="header"><h1>Chania</h1></div>
-
-<div class="menu">
-  <ul>
-    <li>The Flight</li>
-    <li>The City</li>
-    <li>The Island</li>
-    <li>The Food</li>
-  </ul>
-</div>
-
-<div class="content">
-  <h1>The City</h1>
-  <p>Chania is the capital of the Chania region on the island of Crete.</p>
-  <p>The city can be divided in two parts, the old town and the modern city. The old town is situated next to the old harbour and is the matrix around which the whole urban area was developed.</p>
-  <p>Chania lies along the north west coast of the island Crete.</p>
-</div>  
-
-<div class="facts">
-  <h2>Facts:</h2>
-  <ul>
-    <li>Chania is a city on the island of Crete</li>
-    <li>Crete is a Greek island in the Mediterranean Sea</li>
-  </ul>
-</div>
-
-<div class="footer"><p>Resize the browser window to see the responsive effect.</p></div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif" alt="Dancing cat" width="600" height="300">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JULS NARIO</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">JULS NARIO</h5>
+    <h3 class="w3-hide-medium w3-hide-small">DANCING CAT</h3>
+  </div>
   
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Cats</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+  <!-- Images (Portfolio) -->
+  <img src="https://i.pinimg.com/736x/b4/bb/b2/b4bbb2198b036fe1024571ec6b60f8b8.jpg" alt="Mogged cat" class="w3-image" width="1000" height="500">
+  <img src="https://cdn-useast1.kapwing.com/static/templates/crying-cat-meme-template-full-719a53dc.webp" alt="Crying Cat" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="https://i.pinimg.com/736x/00/79/b7/0079b7d0d38bc285def998d2aacfb7e5.jpg" alt="Derpy Cat" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="https://unchainedcrypto.com/wp-content/uploads/2024/08/Untitled-design.png" alt="Nom Nom" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="https://imgix.ranker.com/list_img_v2/2229/2862229/original/2862229" alt="Where is my MILK!" class="w3-image w3-margin-top" width="1000" height="500">
+
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Contact</h3>
+    <hr>
+    <p>If you want to learn more about cat memes Contact, Shurlee Ashlee</p>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Hotdawgs</a></p>
+
+  </div>
+
+<!-- End page content -->
 </div>
 
 </body>
 </html>
-
