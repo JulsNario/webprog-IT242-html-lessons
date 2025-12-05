@@ -1,0 +1,45 @@
+/* Import a clean, modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Very light gray background */
+}
+
+/* Custom styles for the Card component */
+.card {
+    border: none; /* Remove default border */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.card-header {
+    border-bottom: 3px solid #0d6efd; /* Blue line under the header */
+    letter-spacing: 1px;
+}
+
+/* Custom CSS Masking for the second image */
+.custom-masked-img {
+    /* Ensure the image takes the full width of its container */
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    
+    /* Using a radial gradient to create a circular/oval mask */
+    /* This essentially hides the corners/edges, creating a smooth effect */
+    mask-image: radial-gradient(circle, white 70%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle, white 70%, transparent 100%);
+}
+
+/* Style for the list items to remove default bullet and add spacing */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px; /* Add slight spacing between list items */
+}
